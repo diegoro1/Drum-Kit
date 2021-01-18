@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+:root{
+    --primary-color: #DDB967;
+    --secondary-color: #221D23;
+    --tertiary-color: #D1603D;
+    --logo-color: #D0E37F;
+    --text-color: #4F3824;
+
+
+    color: var(--text-color);
+}
+
+body{
+    height: 100vh;
+}
+
+nav{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: x-large;
+    background-color: var(--secondary-color);
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--logo-color)
+}
+
+.main-content{
+    background-color: var(--tertiary-color);
+    height: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 8%;
+    background-color: var(--secondary-color);
+}
+
+.btn{
+    padding: 1rem;
+    color: var(--text-color);
+    margin: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10%;
+    font-size: larger;
+    background-color: var(--primary-color);
+    transition: all 50ms ease 0s;
+    border-color: var(--logo-color);
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{cursor: pointer;}
+.btn:active{
+    background-color: var(--secondary-color);
+    color: var(--logo-color);
+    box-shadow: 0px -15px 20px  var(--logo-color);
+    transform: translateY(7px);
+}
+
+.keys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sub-p{
+    padding-top: 0.2rem;
+    font-size: small;
+}
+
+.play{
+    background-color: var(--secondary-color);
+    color: var(--logo-color);
+    box-shadow: 0px -15px 20px  var(--logo-color);
+    transform: translateY(7px);
+}
